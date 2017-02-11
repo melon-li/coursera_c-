@@ -32,9 +32,9 @@ class Array2{
             return p + col*index; 
         }
 
-//        int & operator()(int i, int j){
-  //          return p[i*col + j]; 
-    //    }
+        int & operator()(int i, int j){
+            return p[i*col + j]; 
+        }
     
         ~Array2(){
              if(p) delete [] p;
@@ -51,7 +51,7 @@ int main() {
         }
     for( i = 0;i < 3; ++i ) {
         for( j = 0; j < 4; j ++ ) {
-            cout << a[i][j] << ",";
+            cout << a(i, j) << ",";
         }
         cout << endl;
     }
