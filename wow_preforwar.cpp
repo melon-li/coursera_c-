@@ -1,163 +1,126 @@
 #include <iostream>
-#include <cstdio>
-#include <string>
+#include <cstring>
+#include <stdint.h>
+#include <stdio.h>
+
 using namespace std;
+enum WType{DRAGON, NINJA, ICEMAN, LION, WOLF};
+enum HType{RED, BLUE};
 
-#define WARRIOR_NUM 5
-#define HEADQUARTER_NUM 2
+class HeadQuarter;
+const uint8_t WARRIOR_NUM = 5;
+const uint8_t HQ_NUM = 2;
 
-class Headquarter;
 class Warrior{
-    private:
-        int number;
-        int name_index;
-        int life_val;
-        int force_val;
-        Headquarter *hq;
-    
     public:
-        static string names[WARRIOR_NUM];
-        static char life_vals[WARRIOR_NUM];
-        Warrior(Headquarter *hq, int num, int lv, int fv);
-        void print_result(int time);
+        static uint8_t inital_lifevals[WARRIOR_NUM]; 
+        WType type;
+        uint32_t id;
+        uint32_t life_force;
+        uint32_t fight_force;
+        HeadQuarter *hq;
+        Warrior *next;
+        Warrior(uint32_t _id, uint32_t _lf, uint32_t _ff, WType _t, HeadQuarter *_hq):
+                id(_id), life_force(_lf), fight_force(_ff), type(_t), hq(_hq){
+            next = NULL;
+        } 
 };
+uint8_t Warrior::inital_lifevals[WARRIOR_NUM] = {0, 0, 0, 0, 0};
 
-class Headquarter{
-    private:
-        char stopped;
-        int total_life_val;
-        int total_warrior_val;
-        Warrior * pwarrior[1000];
-        
+class HeadQuarter{
     public:
-        char color; // 0 stands for red headquarter, 1 means blue
-        char cur_index; // it is the index in producing_order array (WARRIOR_NUM) 
-        static char producing_order[HEADQUARTER_NUM][WARRIOR_NUM];
-        int warrior_num[WARRIOR_NUM];
-        friend class Warrior;
-        char produce(int time);
-        string get_color();
-        void set_total_life(int tl);
-        Headquarter(char c);
-        ~Headquarter();
-};
+        static WType producing_order[2][WARRIOR_NUM];
+        HType type;    
+        uint32_t total_lf;
+        uint32_t total_war;
+        uint32_t war_cnt[WARRIOR_NUM];
+        Warrior *warrior_lib;
+        uint8_t cur_index;
+        bool stopped;
 
-Warrior::Warrior(Headquarter *hq, int num, int lv, int fv){
-    this->hq = hq;
-    this->number = num;
-    this->life_val = lv;
-    this->force_val = fv;
-}
-
-void Warrior::print_result(int time){
-    string color_str = hq->get_color();
-    char index = hq->producing_order[hq->color][hq->cur_index];
-    printf("%03d %s %s %d born with strength %d, %d %s in %s headquarter\n",
-            time, color_str.c_str(), names[index].c_str(), hq->total_warrior_val, 
-            life_val, hq-> warrior_num[index], names[index].c_str(),
-            color_str.c_str());
-}
-
-
-Headquarter::Headquarter(char c){
-    char i;
-    this->stopped = 0;
-    this->cur_index = 0;
-    this->color = c;
-    this->total_life_val = 0;
-    this->total_warrior_val = 1;
-    for(i=0; i< WARRIOR_NUM; i++)
-        warrior_num[i] = 0;
-}
-
-void Headquarter::set_total_life(int tl){
-    total_life_val = tl;
-}
-char Headquarter::produce(int time){
-    char i;
-    char cnt = 0;
-    char lv_index;
-   
-    if(stopped) return 1;
-    //check if life value is used up!
-    while(cnt < WARRIOR_NUM){
-        i = cur_index + cnt;
-        cur_index = i % WARRIOR_NUM;
-        lv_index = producing_order[color][cur_index];        
-        if(Warrior::life_vals[lv_index] < total_life_val){
-            total_life_val -= Warrior::life_vals[lv_index];
-            break;
+        HeadQuarter(HType _t, uint32_t _tlf):type(_t),total_lf(_tlf){
+            warrior_lib=NULL;
+            cur_index = 0;
+            total_war = 0;
+            stopped = false;
+            for(uint8_t i=0; i<WARRIOR_NUM; i++) war_cnt[i] = 0;
         }
-        cnt++;
-    }
 
-    // the life value is used up!
-    if(cnt == WARRIOR_NUM){
-        if(color == 0){
-            printf("%03d red headquarter stops making warriors\n", time);
-        }else if(color == 1)
-            printf("%03d blue headquarter stops making warriors\n", time);
-        stopped = 1;
-        return 1;
-    }
+        bool create_warrior(uint32_t time);
+        void print_info(uint32_t time, WType type);
+        void set_lifeval(uint32_t lv){total_lf=lv;stopped=false;}
+};
 
-    //life value is not used up,  produce warrior
-    pwarrior[total_warrior_val] = new Warrior(this, ++warrior_num[lv_index], Warrior::life_vals[lv_index], 10);      
-    pwarrior[total_warrior_val]->print_result(time);
-    total_warrior_val++;
-
-    cur_index++;
-    if(cur_index >= WARRIOR_NUM){
-        cur_index = 0;
+WType HeadQuarter::producing_order[HQ_NUM][WARRIOR_NUM] = {{ICEMAN, LION, WOLF, NINJA, DRAGON},
+                                           {LION, DRAGON, NINJA, ICEMAN, WOLF}};
+bool HeadQuarter::create_warrior(uint32_t time){
+    uint32_t life_val = 0;
+    WType wtype;
+    uint8_t cnt = 0; 
+    if(stopped) return false;
+    while(cnt++ < WARRIOR_NUM){
+        wtype = producing_order[type][cur_index++];
+        if(cur_index >= WARRIOR_NUM) cur_index = 0;
+        life_val = Warrior::inital_lifevals[wtype];
+        if(life_val <= total_lf){
+            total_lf -= life_val; 
+            if(warrior_lib == NULL){
+                warrior_lib = new Warrior(total_war, life_val, life_val, wtype, this);
+            }else{
+                warrior_lib->next = new Warrior(total_war, life_val, life_val, wtype, this);
+            }
+            war_cnt[wtype]++;
+            total_war++;
+            print_info(time, wtype);
+            return true;
+        }
     }
-   return 0;
+    stopped = true;
+    print_info(time, wtype);
+    return false;
 }
 
-string Headquarter::get_color(){
-    if(color == 0){
-        return "red";
-    }else{
-        return "blue";
-    }
-}
+void HeadQuarter::print_info(uint32_t time, WType wtype){
+    string hqnames[HQ_NUM] = {"red", "blue"};
+    string warnames[WARRIOR_NUM] = {"dragon", "ninja", "iceman", "lion", "wolf"};
 
-Headquarter::~Headquarter(){
-    int i;
-    for(i=0; i< total_warrior_val; i++){
-        delete pwarrior[i];
+    if(stopped){
+        printf("%03d %s headquarter stops making warriors\n",
+               time,
+               hqnames[type].c_str());
+        return;
     }
+    printf("%03d %s %s %d born with strength %d, %d %s in %s headquarter\n",
+            time,
+            hqnames[type].c_str(),
+            warnames[wtype].c_str(),
+            total_war,
+            Warrior::inital_lifevals[wtype],
+            war_cnt[wtype],
+            warnames[wtype].c_str(),
+            hqnames[type].c_str());
 }
-
-string Warrior::names[WARRIOR_NUM] = {"dragon","ninja","iceman","lion","wolf"};
-char Warrior::life_vals[WARRIOR_NUM];
-char Headquarter::producing_order[HEADQUARTER_NUM][WARRIOR_NUM] = {{ 2,3,4,1,0 }, {3,0,1,2,4}}; //producing order
 
 int main(){
-    int t;
-    int m;
-    Headquarter red_hq(0);
-    Headquarter blue_hq(1);
-    //scanf("Case total number:%d", &t);
-    scanf("%d", &t);
-    int ncase_num = 1;
-    while(t--){
-        printf("Case:%d\n",ncase_num++);
-        //scanf("Total Life Value:%d", &m);
-        scanf("%d", &m);
-        red_hq.set_total_life(m);
-        blue_hq.set_total_life(m);
-        for(int i=0; i< WARRIOR_NUM; i++)
-            scanf("%d", & Warrior::life_vals[i]);
-        int ntime = 0;
-        while(true){
-            int tmp1 = red_hq.produce(ntime);
-            int tmp2 = blue_hq.produce(ntime);
-           // printf("%s ", red_hq.get_color());
-           // printf("%s\n", blue_hq.get_color());
-            if( tmp1 == 1 && tmp2 == 1)
-                break;
-            ntime++;
-        }
-    }   
+    uint32_t group_num = 0;
+    uint32_t total_lifevals = 0;
+    uint32_t time_seq = 0;
+    bool rflag = false;
+    bool bflag = false;
+    uint32_t cnt = 0; 
+
+    cin>>group_num;
+    cin>>total_lifevals;
+    HeadQuarter rhq(RED, total_lifevals);
+    HeadQuarter bhq(BLUE, total_lifevals);
+    for(uint8_t i=0; i<WARRIOR_NUM; i++)scanf("%d", &Warrior::inital_lifevals[i]);
+    cout<<"Case:"<<group_num<<endl;
+    cnt = total_lifevals;
+    time_seq = 0;
+    while(cnt--){
+        rflag = rhq.create_warrior(time_seq);
+        bflag = bhq.create_warrior(time_seq++);
+        if(!rflag && !bflag ) break;
+    }
     return 0;
 }
