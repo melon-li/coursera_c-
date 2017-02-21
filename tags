@@ -12,9 +12,16 @@ A	test6-1.cpp	/^class A {$/;"	c	file:
 A	test6-2.cpp	/^class A {$/;"	c	file:
 A	test6-3.cpp	/^class A {$/;"	c	file:
 ARROW	test6-4.cpp	/^enum WeaponType{SWORD, BOMB, ARROW};$/;"	e	enum:WeaponType	file:
+ARROW	wow_final.cpp	/^enum WeaponType{SWORD, BOMB, ARROW};$/;"	e	enum:WeaponType	file:
 Array2	test4-3.cpp	/^        Array2(){$/;"	f	class:Array2
 Array2	test4-3.cpp	/^        Array2(int r, int c){$/;"	f	class:Array2
 Array2	test4-3.cpp	/^class Array2{$/;"	c	file:
+Arrow	test6-4.cpp	/^        Arrow(Arrow *a):Weapon(a){$/;"	f	class:Arrow
+Arrow	test6-4.cpp	/^        Arrow(char *n, uint32_t _id, Warrior *w):$/;"	f	class:Arrow
+Arrow	test6-4.cpp	/^class Arrow: public Weapon{$/;"	c	file:
+Arrow	wow_final.cpp	/^        Arrow(Arrow *a):Weapon(a){$/;"	f	class:Arrow
+Arrow	wow_final.cpp	/^        Arrow(char *n, uint32_t _id, Warrior *w):$/;"	f	class:Arrow
+Arrow	wow_final.cpp	/^class Arrow: public Weapon{$/;"	c	file:
 B	test6-1.cpp	/^class B:public A {$/;"	c	file:
 B	test6-2.cpp	/^class B:public A {$/;"	c	file:
 B	test6-3.cpp	/^class B:public A {$/;"	c	file:
@@ -22,8 +29,10 @@ BLUE	test3-4.cpp	/^enum HType{RED, BLUE};$/;"	e	enum:HType	file:
 BLUE	test5-2.cpp	/^enum HType{RED, BLUE};$/;"	e	enum:HType	file:
 BLUE	test6-4.cpp	/^enum HType{RED, BLUE, NONE};$/;"	e	enum:HType	file:
 BLUE	wow_assemble.cpp	/^enum HType{RED, BLUE};$/;"	e	enum:HType	file:
+BLUE	wow_final.cpp	/^enum HType{RED, BLUE, NONE};$/;"	e	enum:HType	file:
 BLUE	wow_preforwar.cpp	/^enum HType{RED, BLUE};$/;"	e	enum:HType	file:
 BOMB	test6-4.cpp	/^enum WeaponType{SWORD, BOMB, ARROW};$/;"	e	enum:WeaponType	file:
+BOMB	wow_final.cpp	/^enum WeaponType{SWORD, BOMB, ARROW};$/;"	e	enum:WeaponType	file:
 Base	test3-3.cpp	/^    Base(int n):k(n) { }$/;"	f	class:Base
 Base	test3-3.cpp	/^class Base {$/;"	c	file:
 Big	test3-3.cpp	/^    Big(const Big& a):v(a.v), b(a.b.k){$/;"	f	class:Big
@@ -38,6 +47,12 @@ Bign	test4-4.cpp	/^Bign::Bign(char *str, int){$/;"	f	class:Bign
 Bign	test4-4.cpp	/^Bign::Bign(const Bign &b){$/;"	f	class:Bign
 Bign	test4-4.cpp	/^Bign::Bign(int32_t i){$/;"	f	class:Bign
 Bign	test4-4.cpp	/^class Bign{$/;"	c	file:
+Bomb	test6-4.cpp	/^        Bomb(Bomb *b):Weapon(b){}$/;"	f	class:Bomb
+Bomb	test6-4.cpp	/^        Bomb(char *n, uint32_t _id, Warrior *w):Weapon(n, _id, w){}$/;"	f	class:Bomb
+Bomb	test6-4.cpp	/^class Bomb: public Weapon{$/;"	c	file:
+Bomb	wow_final.cpp	/^        Bomb(Bomb *b):Weapon(b){}$/;"	f	class:Bomb
+Bomb	wow_final.cpp	/^        Bomb(char *n, uint32_t _id, Warrior *w):Weapon(n, _id, w){}$/;"	f	class:Bomb
+Bomb	wow_final.cpp	/^class Bomb: public Weapon{$/;"	c	file:
 C	test6-1.cpp	/^class C:public B {$/;"	c	file:
 C	test6-3.cpp	/^class C:public B {$/;"	c	file:
 CArray2D	test7-1-1.cpp	/^        CArray2D() {a = NULL;}$/;"	f	class:CArray3D::CArray2D
@@ -58,6 +73,10 @@ City	test6-4.cpp	/^        City(){$/;"	f	class:City
 City	test6-4.cpp	/^        City(const City &c){$/;"	f	class:City
 City	test6-4.cpp	/^        City(uint32_t _id):id(_id){$/;"	f	class:City
 City	test6-4.cpp	/^class City{$/;"	c	file:
+City	wow_final.cpp	/^        City(){$/;"	f	class:City
+City	wow_final.cpp	/^        City(const City &c){$/;"	f	class:City
+City	wow_final.cpp	/^        City(uint32_t _id):id(_id){$/;"	f	class:City
+City	wow_final.cpp	/^class City{$/;"	c	file:
 CompareString	test5-1.cpp	/^int CompareString( const void * e1, const void * e2) {$/;"	f
 Complex	test2-1.cpp	/^        Complex(int i){$/;"	f	class:Complex
 Complex	test2-1.cpp	/^       Complex(double r, double i){$/;"	f	class:Complex
@@ -67,6 +86,7 @@ DRAGON	test3-4.cpp	/^enum WType{DRAGON, NINJA, ICEMAN, LION, WOLF};$/;"	e	enum:W
 DRAGON	test5-2.cpp	/^enum WType{DRAGON, NINJA, ICEMAN, LION, WOLF};$/;"	e	enum:WType	file:
 DRAGON	test6-4.cpp	/^enum WType{DRAGON, NINJA, ICEMAN, LION, WOLF};$/;"	e	enum:WType	file:
 DRAGON	wow_assemble.cpp	/^enum WType{DRAGON, NINJA, ICEMAN, LION, WOLF};$/;"	e	enum:WType	file:
+DRAGON	wow_final.cpp	/^enum WType{DRAGON, NINJA, ICEMAN, LION, WOLF};$/;"	e	enum:WType	file:
 DRAGON	wow_preforwar.cpp	/^enum WType{DRAGON, NINJA, ICEMAN, LION, WOLF};$/;"	e	enum:WType	file:
 Do	test6-1.cpp	/^        virtual void Do()$/;"	f	class:B
 Do	test6-1.cpp	/^        void Do()$/;"	f	class:A
@@ -76,8 +96,12 @@ Do	test6-3.cpp	/^        virtual void Do()$/;"	f	class:B
 Do	test6-3.cpp	/^        void Do( )$/;"	f	class:C
 Dragon	test5-2.cpp	/^       Dragon(uint32_t _id, uint32_t _lf, uint32_t _ff, WType _t, HeadQuarter *_hq):$/;"	f	class:Dragon
 Dragon	test5-2.cpp	/^class Dragon:public Warrior{$/;"	c	file:
+Dragon	test6-4.cpp	/^        Dragon(uint32_t _id, uint32_t _lf, uint32_t _ff, WType _t, HeadQuarter *_hq):$/;"	f	class:Dragon
+Dragon	test6-4.cpp	/^class Dragon:public Warrior{$/;"	c	file:
 Dragon	wow_assemble.cpp	/^       Dragon(uint32_t _id, uint32_t _lf, uint32_t _ff, WType _t, HeadQuarter *_hq):$/;"	f	class:Dragon
 Dragon	wow_assemble.cpp	/^class Dragon:public Warrior{$/;"	c	file:
+Dragon	wow_final.cpp	/^        Dragon(uint32_t _id, uint32_t _lf, uint32_t _ff, WType _t, HeadQuarter *_hq):$/;"	f	class:Dragon
+Dragon	wow_final.cpp	/^class Dragon:public Warrior{$/;"	c	file:
 Fun	test6-1.cpp	/^        void Fun()$/;"	f	class:A
 Fun	test6-1.cpp	/^    void Fun()$/;"	f	class:C
 Fun	test6-3.cpp	/^        void Fun()$/;"	f	class:A
@@ -87,11 +111,13 @@ HQ_NUM	test3-4.cpp	/^const uint8_t HQ_NUM = 2;$/;"	v
 HQ_NUM	test5-2.cpp	/^const uint8_t HQ_NUM = 2;$/;"	v
 HQ_NUM	test6-4.cpp	/^const uint8_t HQ_NUM = 2;$/;"	v
 HQ_NUM	wow_assemble.cpp	/^const uint8_t HQ_NUM = 2;$/;"	v
+HQ_NUM	wow_final.cpp	/^const uint8_t HQ_NUM = 2;$/;"	v
 HQ_NUM	wow_preforwar.cpp	/^const uint8_t HQ_NUM = 2;$/;"	v
 HType	test3-4.cpp	/^enum HType{RED, BLUE};$/;"	g	file:
 HType	test5-2.cpp	/^enum HType{RED, BLUE};$/;"	g	file:
 HType	test6-4.cpp	/^enum HType{RED, BLUE, NONE};$/;"	g	file:
 HType	wow_assemble.cpp	/^enum HType{RED, BLUE};$/;"	g	file:
+HType	wow_final.cpp	/^enum HType{RED, BLUE, NONE};$/;"	g	file:
 HType	wow_preforwar.cpp	/^enum HType{RED, BLUE};$/;"	g	file:
 HeadQuarter	test3-4.cpp	/^        HeadQuarter(HType _t, uint32_t _tlf):type(_t),total_lf(_tlf){$/;"	f	class:HeadQuarter
 HeadQuarter	test3-4.cpp	/^class HeadQuarter{$/;"	c	file:
@@ -101,26 +127,42 @@ HeadQuarter	test6-4.cpp	/^        HeadQuarter(HType _t, uint32_t _tlf, City *c):
 HeadQuarter	test6-4.cpp	/^class HeadQuarter{$/;"	c	file:
 HeadQuarter	wow_assemble.cpp	/^        HeadQuarter(HType _t, uint32_t _tlf):type(_t),total_lf(_tlf){$/;"	f	class:HeadQuarter
 HeadQuarter	wow_assemble.cpp	/^class HeadQuarter{$/;"	c	file:
+HeadQuarter	wow_final.cpp	/^        HeadQuarter(HType _t, uint32_t _tlf, City *c):$/;"	f	class:HeadQuarter
+HeadQuarter	wow_final.cpp	/^class HeadQuarter{$/;"	c	file:
 HeadQuarter	wow_preforwar.cpp	/^        HeadQuarter(HType _t, uint32_t _tlf):type(_t),total_lf(_tlf){$/;"	f	class:HeadQuarter
 HeadQuarter	wow_preforwar.cpp	/^class HeadQuarter{$/;"	c	file:
 ICEMAN	test3-4.cpp	/^enum WType{DRAGON, NINJA, ICEMAN, LION, WOLF};$/;"	e	enum:WType	file:
 ICEMAN	test5-2.cpp	/^enum WType{DRAGON, NINJA, ICEMAN, LION, WOLF};$/;"	e	enum:WType	file:
 ICEMAN	test6-4.cpp	/^enum WType{DRAGON, NINJA, ICEMAN, LION, WOLF};$/;"	e	enum:WType	file:
 ICEMAN	wow_assemble.cpp	/^enum WType{DRAGON, NINJA, ICEMAN, LION, WOLF};$/;"	e	enum:WType	file:
+ICEMAN	wow_final.cpp	/^enum WType{DRAGON, NINJA, ICEMAN, LION, WOLF};$/;"	e	enum:WType	file:
 ICEMAN	wow_preforwar.cpp	/^enum WType{DRAGON, NINJA, ICEMAN, LION, WOLF};$/;"	e	enum:WType	file:
 Iceman	test5-2.cpp	/^        Iceman(uint32_t _id, uint32_t _lf, uint32_t _ff, WType _t, HeadQuarter *_hq):$/;"	f	class:Iceman
 Iceman	test5-2.cpp	/^class Iceman:public Warrior{$/;"	c	file:
+Iceman	test6-4.cpp	/^        Iceman(uint32_t _id, uint32_t _lf, uint32_t _ff, WType _t, HeadQuarter *_hq):$/;"	f	class:Iceman
+Iceman	test6-4.cpp	/^class Iceman:public Warrior{$/;"	c	file:
 Iceman	wow_assemble.cpp	/^        Iceman(uint32_t _id, uint32_t _lf, uint32_t _ff, WType _t, HeadQuarter *_hq):$/;"	f	class:Iceman
 Iceman	wow_assemble.cpp	/^class Iceman:public Warrior{$/;"	c	file:
+Iceman	wow_final.cpp	/^        Iceman(uint32_t _id, uint32_t _lf, uint32_t _ff, WType _t, HeadQuarter *_hq):$/;"	f	class:Iceman
+Iceman	wow_final.cpp	/^class Iceman:public Warrior{$/;"	c	file:
+K	test6-4.cpp	/^        static int32_t K;$/;"	m	class:Lion	file:
+K	test6-4.cpp	/^int32_t Lion::K = 0;$/;"	m	class:Lion	file:
+K	wow_final.cpp	/^        static int32_t K;$/;"	m	class:Lion	file:
+K	wow_final.cpp	/^int32_t Lion::K = 0;$/;"	m	class:Lion	file:
 LION	test3-4.cpp	/^enum WType{DRAGON, NINJA, ICEMAN, LION, WOLF};$/;"	e	enum:WType	file:
 LION	test5-2.cpp	/^enum WType{DRAGON, NINJA, ICEMAN, LION, WOLF};$/;"	e	enum:WType	file:
 LION	test6-4.cpp	/^enum WType{DRAGON, NINJA, ICEMAN, LION, WOLF};$/;"	e	enum:WType	file:
 LION	wow_assemble.cpp	/^enum WType{DRAGON, NINJA, ICEMAN, LION, WOLF};$/;"	e	enum:WType	file:
+LION	wow_final.cpp	/^enum WType{DRAGON, NINJA, ICEMAN, LION, WOLF};$/;"	e	enum:WType	file:
 LION	wow_preforwar.cpp	/^enum WType{DRAGON, NINJA, ICEMAN, LION, WOLF};$/;"	e	enum:WType	file:
 Lion	test5-2.cpp	/^        Lion(uint32_t _id, uint32_t _lf, uint32_t _ff, WType _t, HeadQuarter *_hq):$/;"	f	class:Lion
 Lion	test5-2.cpp	/^class Lion:public Warrior{$/;"	c	file:
+Lion	test6-4.cpp	/^        Lion(uint32_t _id, uint32_t _lf, uint32_t _ff, WType _t, HeadQuarter *_hq):$/;"	f	class:Lion
+Lion	test6-4.cpp	/^class Lion:public Warrior{$/;"	c	file:
 Lion	wow_assemble.cpp	/^        Lion(uint32_t _id, uint32_t _lf, uint32_t _ff, WType _t, HeadQuarter *_hq):$/;"	f	class:Lion
 Lion	wow_assemble.cpp	/^class Lion:public Warrior{$/;"	c	file:
+Lion	wow_final.cpp	/^        Lion(uint32_t _id, uint32_t _lf, uint32_t _ff, WType _t, HeadQuarter *_hq):$/;"	f	class:Lion
+Lion	wow_final.cpp	/^class Lion:public Warrior{$/;"	c	file:
 LongInt	long_int.cpp	/^        LongInt(){size=0;p=NULL;}$/;"	f	class:LongInt
 LongInt	long_int.cpp	/^LongInt::LongInt(const char *sp){$/;"	f	class:LongInt
 LongInt	long_int.cpp	/^class LongInt{$/;"	c	file:
@@ -138,66 +180,131 @@ NINJA	test3-4.cpp	/^enum WType{DRAGON, NINJA, ICEMAN, LION, WOLF};$/;"	e	enum:WT
 NINJA	test5-2.cpp	/^enum WType{DRAGON, NINJA, ICEMAN, LION, WOLF};$/;"	e	enum:WType	file:
 NINJA	test6-4.cpp	/^enum WType{DRAGON, NINJA, ICEMAN, LION, WOLF};$/;"	e	enum:WType	file:
 NINJA	wow_assemble.cpp	/^enum WType{DRAGON, NINJA, ICEMAN, LION, WOLF};$/;"	e	enum:WType	file:
+NINJA	wow_final.cpp	/^enum WType{DRAGON, NINJA, ICEMAN, LION, WOLF};$/;"	e	enum:WType	file:
 NINJA	wow_preforwar.cpp	/^enum WType{DRAGON, NINJA, ICEMAN, LION, WOLF};$/;"	e	enum:WType	file:
 NONE	test6-4.cpp	/^enum HType{RED, BLUE, NONE};$/;"	e	enum:HType	file:
+NONE	wow_final.cpp	/^enum HType{RED, BLUE, NONE};$/;"	e	enum:HType	file:
 Ninja	test5-2.cpp	/^        Ninja(uint32_t _id, uint32_t _lf, uint32_t _ff, WType _t, HeadQuarter *_hq):$/;"	f	class:Ninja
 Ninja	test5-2.cpp	/^class Ninja:public Warrior{$/;"	c	file:
+Ninja	test6-4.cpp	/^        Ninja(uint32_t _id, uint32_t _lf, uint32_t _ff, WType _t, HeadQuarter *_hq):$/;"	f	class:Ninja
+Ninja	test6-4.cpp	/^class Ninja:public Warrior{$/;"	c	file:
 Ninja	wow_assemble.cpp	/^        Ninja(uint32_t _id, uint32_t _lf, uint32_t _ff, WType _t, HeadQuarter *_hq):$/;"	f	class:Ninja
 Ninja	wow_assemble.cpp	/^class Ninja:public Warrior{$/;"	c	file:
+Ninja	wow_final.cpp	/^        Ninja(uint32_t _id, uint32_t _lf, uint32_t _ff, WType _t, HeadQuarter *_hq):$/;"	f	class:Ninja
+Ninja	wow_final.cpp	/^class Ninja:public Warrior{$/;"	c	file:
 Print	test4-1.cpp	/^    void Print() {$/;"	f	class:Complex
+PriorityWarrior	test6-4.cpp	/^        PriorityWarrior(City *c, Warrior *w){$/;"	f	class:PriorityWarrior
+PriorityWarrior	test6-4.cpp	/^        PriorityWarrior(const PriorityWarrior &pw){$/;"	f	class:PriorityWarrior
+PriorityWarrior	test6-4.cpp	/^class PriorityWarrior{$/;"	c	file:
+PriorityWarrior	wow_final.cpp	/^        PriorityWarrior(City *c, Warrior *w){$/;"	f	class:PriorityWarrior
+PriorityWarrior	wow_final.cpp	/^        PriorityWarrior(const PriorityWarrior &pw){$/;"	f	class:PriorityWarrior
+PriorityWarrior	wow_final.cpp	/^class PriorityWarrior{$/;"	c	file:
+PriorityWeapon	test6-4.cpp	/^        PriorityWeapon(Weapon *we): weapon(we){id = index;index++;}$/;"	f	class:PriorityWeapon
+PriorityWeapon	test6-4.cpp	/^        PriorityWeapon(const PriorityWeapon &pwe){$/;"	f	class:PriorityWeapon
+PriorityWeapon	test6-4.cpp	/^class PriorityWeapon{$/;"	c	file:
+PriorityWeapon	wow_final.cpp	/^        PriorityWeapon(Weapon *we): weapon(we){id = index;index++;}$/;"	f	class:PriorityWeapon
+PriorityWeapon	wow_final.cpp	/^        PriorityWeapon(const PriorityWeapon &pwe){$/;"	f	class:PriorityWeapon
+PriorityWeapon	wow_final.cpp	/^class PriorityWeapon{$/;"	c	file:
+R	test6-4.cpp	/^        static uint32_t R;$/;"	m	class:Arrow	file:
+R	test6-4.cpp	/^uint32_t Arrow::R = 0;$/;"	m	class:Arrow	file:
+R	wow_final.cpp	/^        static uint32_t R;$/;"	m	class:Arrow	file:
+R	wow_final.cpp	/^uint32_t Arrow::R = 0;$/;"	m	class:Arrow	file:
 RED	test3-4.cpp	/^enum HType{RED, BLUE};$/;"	e	enum:HType	file:
 RED	test5-2.cpp	/^enum HType{RED, BLUE};$/;"	e	enum:HType	file:
 RED	test6-4.cpp	/^enum HType{RED, BLUE, NONE};$/;"	e	enum:HType	file:
 RED	wow_assemble.cpp	/^enum HType{RED, BLUE};$/;"	e	enum:HType	file:
+RED	wow_final.cpp	/^enum HType{RED, BLUE, NONE};$/;"	e	enum:HType	file:
 RED	wow_preforwar.cpp	/^enum HType{RED, BLUE};$/;"	e	enum:HType	file:
 ReturnVal	test4-2.cpp	/^        int ReturnVal() { return nVal; }$/;"	f	class:MyInt
 SWORD	test6-4.cpp	/^enum WeaponType{SWORD, BOMB, ARROW};$/;"	e	enum:WeaponType	file:
+SWORD	wow_final.cpp	/^enum WeaponType{SWORD, BOMB, ARROW};$/;"	e	enum:WeaponType	file:
 Sample	test3-2.cpp	/^    Sample(const Sample & s){$/;"	f	class:Sample
 Sample	test3-2.cpp	/^    Sample(int n):v(n) { }$/;"	f	class:Sample
 Sample	test3-2.cpp	/^class Sample{$/;"	c	file:
 SetToLen	big_int.cpp	/^    char * SetToLen(int A, int B, const char * originChars) {$/;"	f
 Sqrt	big_int2.cpp	/^bign bign::Sqrt()const$/;"	f	class:bign
 Sqrt	test4-4-2.cpp	/^bign bign::Sqrt()const$/;"	f	class:bign
+StringCmd	test7-4.cpp	/^        StringCmd(){}$/;"	f	class:StringCmd
+StringCmd	test7-4.cpp	/^class StringCmd{$/;"	c	file:
 Student	test1-1.cpp	/^    Student(char *_name, char *_id, uint32_t _old){$/;"	f	class:Student
 Student	test1-1.cpp	/^    Student(char *str){$/;"	f	class:Student
 Student	test1-1.cpp	/^class Student{$/;"	c	file:
+Sword	test6-4.cpp	/^        Sword(Sword *s):Weapon(s){}$/;"	f	class:Sword
+Sword	test6-4.cpp	/^        Sword(char *n, uint32_t _id,  Warrior *w):$/;"	f	class:Sword
+Sword	test6-4.cpp	/^class Sword: public Weapon{$/;"	c	file:
+Sword	wow_final.cpp	/^        Sword(Sword *s):Weapon(s){}$/;"	f	class:Sword
+Sword	wow_final.cpp	/^        Sword(char *n, uint32_t _id,  Warrior *w):$/;"	f	class:Sword
+Sword	wow_final.cpp	/^class Sword: public Weapon{$/;"	c	file:
 WARRIOR_NUM	test3-4.cpp	/^const uint8_t WARRIOR_NUM = 5;$/;"	v
 WARRIOR_NUM	test5-2.cpp	/^const uint8_t WARRIOR_NUM = 5;$/;"	v
 WARRIOR_NUM	test6-4.cpp	/^const uint8_t WARRIOR_NUM = 5;$/;"	v
 WARRIOR_NUM	wow_assemble.cpp	/^const uint8_t WARRIOR_NUM = 5;$/;"	v
+WARRIOR_NUM	wow_final.cpp	/^const uint8_t WARRIOR_NUM = 5;$/;"	v
 WARRIOR_NUM	wow_preforwar.cpp	/^const uint8_t WARRIOR_NUM = 5;$/;"	v
 WOLF	test3-4.cpp	/^enum WType{DRAGON, NINJA, ICEMAN, LION, WOLF};$/;"	e	enum:WType	file:
 WOLF	test5-2.cpp	/^enum WType{DRAGON, NINJA, ICEMAN, LION, WOLF};$/;"	e	enum:WType	file:
 WOLF	test6-4.cpp	/^enum WType{DRAGON, NINJA, ICEMAN, LION, WOLF};$/;"	e	enum:WType	file:
 WOLF	wow_assemble.cpp	/^enum WType{DRAGON, NINJA, ICEMAN, LION, WOLF};$/;"	e	enum:WType	file:
+WOLF	wow_final.cpp	/^enum WType{DRAGON, NINJA, ICEMAN, LION, WOLF};$/;"	e	enum:WType	file:
 WOLF	wow_preforwar.cpp	/^enum WType{DRAGON, NINJA, ICEMAN, LION, WOLF};$/;"	e	enum:WType	file:
 WType	test3-4.cpp	/^enum WType{DRAGON, NINJA, ICEMAN, LION, WOLF};$/;"	g	file:
 WType	test5-2.cpp	/^enum WType{DRAGON, NINJA, ICEMAN, LION, WOLF};$/;"	g	file:
 WType	test6-4.cpp	/^enum WType{DRAGON, NINJA, ICEMAN, LION, WOLF};$/;"	g	file:
 WType	wow_assemble.cpp	/^enum WType{DRAGON, NINJA, ICEMAN, LION, WOLF};$/;"	g	file:
+WType	wow_final.cpp	/^enum WType{DRAGON, NINJA, ICEMAN, LION, WOLF};$/;"	g	file:
 WType	wow_preforwar.cpp	/^enum WType{DRAGON, NINJA, ICEMAN, LION, WOLF};$/;"	g	file:
 Warrior	test3-4.cpp	/^        Warrior(uint32_t _id, uint32_t _lf, uint32_t _ff, WType _t, HeadQuarter *_hq):$/;"	f	class:Warrior
 Warrior	test3-4.cpp	/^class Warrior{$/;"	c	file:
 Warrior	test5-2.cpp	/^        Warrior(uint32_t _id, uint32_t _lf, uint32_t _ff, WType _t, HeadQuarter *_hq):$/;"	f	class:Warrior
 Warrior	test5-2.cpp	/^class Warrior{$/;"	c	file:
+Warrior	test6-4.cpp	/^        Warrior(uint32_t _id, uint32_t _lf, uint32_t _ff, WType _t, HeadQuarter *_hq):$/;"	f	class:Warrior
+Warrior	test6-4.cpp	/^class Warrior{$/;"	c	file:
 Warrior	wow_assemble.cpp	/^        Warrior(uint32_t _id, uint32_t _lf, uint32_t _ff, WType _t, HeadQuarter *_hq):$/;"	f	class:Warrior
 Warrior	wow_assemble.cpp	/^class Warrior{$/;"	c	file:
+Warrior	wow_final.cpp	/^        Warrior(uint32_t _id, uint32_t _lf, uint32_t _ff, WType _t, HeadQuarter *_hq):$/;"	f	class:Warrior
+Warrior	wow_final.cpp	/^class Warrior{$/;"	c	file:
 Warrior	wow_preforwar.cpp	/^        Warrior(uint32_t _id, uint32_t _lf, uint32_t _ff, WType _t, HeadQuarter *_hq):$/;"	f	class:Warrior
 Warrior	wow_preforwar.cpp	/^class Warrior{$/;"	c	file:
 Weapon	test5-2.cpp	/^        Weapon(char *n, uint32_t i): id(i){$/;"	f	class:Weapon
 Weapon	test5-2.cpp	/^class Weapon{$/;"	c	file:
+Weapon	test6-4.cpp	/^        Weapon(Weapon *w){$/;"	f	class:Weapon
+Weapon	test6-4.cpp	/^        Weapon(char *n, uint32_t i, Warrior *w): $/;"	f	class:Weapon
+Weapon	test6-4.cpp	/^class Weapon{$/;"	c	file:
 Weapon	wow_assemble.cpp	/^        Weapon(char *n, uint32_t i): id(i){$/;"	f	class:Weapon
 Weapon	wow_assemble.cpp	/^class Weapon{$/;"	c	file:
+Weapon	wow_final.cpp	/^        Weapon(Weapon *w){$/;"	f	class:Weapon
+Weapon	wow_final.cpp	/^        Weapon(char *n, uint32_t i, Warrior *w): $/;"	f	class:Weapon
+Weapon	wow_final.cpp	/^class Weapon{$/;"	c	file:
 WeaponType	test6-4.cpp	/^enum WeaponType{SWORD, BOMB, ARROW};$/;"	g	file:
+WeaponType	wow_final.cpp	/^enum WeaponType{SWORD, BOMB, ARROW};$/;"	g	file:
 Wolf	test5-2.cpp	/^        Wolf(uint32_t _id, uint32_t _lf, uint32_t _ff, WType _t, HeadQuarter *_hq):$/;"	f	class:Wolf
 Wolf	test5-2.cpp	/^class Wolf:public Warrior{$/;"	c	file:
+Wolf	test6-4.cpp	/^        Wolf(uint32_t _id, uint32_t _lf, uint32_t _ff, WType _t, HeadQuarter *_hq):$/;"	f	class:Wolf
+Wolf	test6-4.cpp	/^class Wolf:public Warrior{$/;"	c	file:
 Wolf	wow_assemble.cpp	/^        Wolf(uint32_t _id, uint32_t _lf, uint32_t _ff, WType _t, HeadQuarter *_hq):$/;"	f	class:Wolf
 Wolf	wow_assemble.cpp	/^class Wolf:public Warrior{$/;"	c	file:
+Wolf	wow_final.cpp	/^        Wolf(uint32_t _id, uint32_t _lf, uint32_t _ff, WType _t, HeadQuarter *_hq):$/;"	f	class:Wolf
+Wolf	wow_final.cpp	/^class Wolf:public Warrior{$/;"	c	file:
 a	test7-1-1.cpp	/^        T1 *a;$/;"	m	class:CArray3D::CArray2D	file:
 abs	test4-4.cpp	/^        Bign abs(Bign b){ b.flag = 0; return b;}$/;"	f	class:Bign
 array2D	test7-1-1.cpp	/^    CArray2D<T> **array2D;$/;"	m	class:CArray3D	file:
+attack	test6-4.cpp	/^bool Dragon::attack(Warrior *e){$/;"	f	class:Dragon
+attack	test6-4.cpp	/^bool Lion::attack(Warrior *e){$/;"	f	class:Lion
+attack	test6-4.cpp	/^bool Warrior::attack(Warrior *e){$/;"	f	class:Warrior
+attack	test6-4.cpp	/^bool Wolf::attack(Warrior *e){$/;"	f	class:Wolf
+attack	test6-4.cpp	/^void HeadQuarter::attack(HeadQuarter *ehq, uint32_t min){$/;"	f	class:HeadQuarter
+attack	wow_final.cpp	/^bool Dragon::attack(Warrior *e){$/;"	f	class:Dragon
+attack	wow_final.cpp	/^bool Lion::attack(Warrior *e){$/;"	f	class:Lion
+attack	wow_final.cpp	/^bool Warrior::attack(Warrior *e){$/;"	f	class:Warrior
+attack	wow_final.cpp	/^bool Wolf::attack(Warrior *e){$/;"	f	class:Wolf
+attack	wow_final.cpp	/^void HeadQuarter::attack(HeadQuarter *ehq, uint32_t min){$/;"	f	class:HeadQuarter
+award	test6-4.cpp	/^void HeadQuarter::award(priority_queue <$/;"	f	class:HeadQuarter
+award	test6-4.cpp	/^void HeadQuarter::award(priority_queue <PriorityWarrior> pq){$/;"	f	class:HeadQuarter
+award	wow_final.cpp	/^void HeadQuarter::award(priority_queue <$/;"	f	class:HeadQuarter
+award	wow_final.cpp	/^void HeadQuarter::award(priority_queue <PriorityWarrior> pq){$/;"	f	class:HeadQuarter
 b	test3-3.cpp	/^    int v; Base b;$/;"	m	class:Big	file:
 banner	test6-4.cpp	/^        HType banner;$/;"	m	class:City	file:
+banner	wow_final.cpp	/^        HType banner;$/;"	m	class:City	file:
 bign	big_int2.cpp	/^bign::bign()$/;"	f	class:bign
 bign	big_int2.cpp	/^bign::bign(const char *num)$/;"	f	class:bign
 bign	big_int2.cpp	/^bign::bign(int num)$/;"	f	class:bign
@@ -207,37 +314,86 @@ bign	test4-4-2.cpp	/^bign::bign(const char *num)$/;"	f	class:bign
 bign	test4-4-2.cpp	/^bign::bign(int num)$/;"	f	class:bign
 bign	test4-4-2.cpp	/^class bign$/;"	c	file:
 blue_cnt	test6-4.cpp	/^        int8_t blue_cnt;$/;"	m	class:City	file:
+blue_cnt	wow_final.cpp	/^        int8_t blue_cnt;$/;"	m	class:City	file:
+blunt	test6-4.cpp	/^        bool blunt(){$/;"	f	class:Sword
+blunt	wow_final.cpp	/^        bool blunt(){$/;"	f	class:Sword
 city	test6-4.cpp	/^        City *city;$/;"	m	class:HeadQuarter	file:
+city	test6-4.cpp	/^        City *city;$/;"	m	class:PriorityWarrior	file:
+city	test6-4.cpp	/^        City *city;$/;"	m	class:Warrior	file:
+city	wow_final.cpp	/^        City *city;$/;"	m	class:HeadQuarter	file:
+city	wow_final.cpp	/^        City *city;$/;"	m	class:PriorityWarrior	file:
+city	wow_final.cpp	/^        City *city;$/;"	m	class:Warrior	file:
 clean	big_int2.cpp	/^void bign::clean()$/;"	f	class:bign
 clean	test4-4-2.cpp	/^void bign::clean()$/;"	f	class:bign
 col	test4-3.cpp	/^        int col;$/;"	m	class:Array2	file:
 commandOp	test7-4-1.cpp	/^string commandOp()$/;"	f
 create_warrior	test3-4.cpp	/^bool HeadQuarter::create_warrior(uint32_t time){$/;"	f	class:HeadQuarter
 create_warrior	test5-2.cpp	/^bool HeadQuarter::create_warrior(uint32_t time){$/;"	f	class:HeadQuarter
+create_warrior	test6-4.cpp	/^bool HeadQuarter::create_warrior(uint32_t min){$/;"	f	class:HeadQuarter
 create_warrior	wow_assemble.cpp	/^bool HeadQuarter::create_warrior(uint32_t time){$/;"	f	class:HeadQuarter
+create_warrior	wow_final.cpp	/^bool HeadQuarter::create_warrior(uint32_t min){$/;"	f	class:HeadQuarter
 create_warrior	wow_preforwar.cpp	/^bool HeadQuarter::create_warrior(uint32_t time){$/;"	f	class:HeadQuarter
 cur_index	test3-4.cpp	/^        uint8_t cur_index;$/;"	m	class:HeadQuarter	file:
 cur_index	test5-2.cpp	/^        uint8_t cur_index;$/;"	m	class:HeadQuarter	file:
 cur_index	test6-4.cpp	/^        uint8_t cur_index;$/;"	m	class:HeadQuarter	file:
 cur_index	wow_assemble.cpp	/^        uint8_t cur_index;$/;"	m	class:HeadQuarter	file:
+cur_index	wow_final.cpp	/^        uint8_t cur_index;$/;"	m	class:HeadQuarter	file:
 cur_index	wow_preforwar.cpp	/^        uint8_t cur_index;$/;"	m	class:HeadQuarter	file:
 cur_min	test6-4.cpp	/^        uint32_t cur_min;$/;"	m	class:HeadQuarter	file:
-descrease_warrior	test6-4.cpp	/^        void descrease_warrior(){$/;"	f
+cur_min	wow_final.cpp	/^        uint32_t cur_min;$/;"	m	class:HeadQuarter	file:
+data	test7-4.cpp	/^        string data[n];$/;"	m	class:StringCmd	file:
+delete_warrior	test6-4.cpp	/^void HeadQuarter::delete_warrior(Warrior *w){$/;"	f	class:HeadQuarter
+delete_warrior	wow_final.cpp	/^void HeadQuarter::delete_warrior(Warrior *w){$/;"	f	class:HeadQuarter
+descrease_warrior	test6-4.cpp	/^        void descrease_warrior(){$/;"	f	class:City
+descrease_warrior	wow_final.cpp	/^        void descrease_warrior(){$/;"	f	class:City
 divideBy2	big_int.cpp	/^    BigInt & divideBy2(const BigInt & oprand1) {$/;"	f
 factorial	big_int2.cpp	/^bign bign::factorial()const$/;"	f	class:bign
 factorial	test4-4-2.cpp	/^bign bign::factorial()const$/;"	f	class:bign
+fight_back	test6-4.cpp	/^bool Lion::fight_back(Warrior *e){$/;"	f	class:Lion
+fight_back	test6-4.cpp	/^bool Warrior::fight_back(Warrior *e){$/;"	f	class:Warrior
+fight_back	test6-4.cpp	/^bool Wolf::fight_back(Warrior *e){$/;"	f	class:Wolf
+fight_back	wow_final.cpp	/^bool Lion::fight_back(Warrior *e){$/;"	f	class:Lion
+fight_back	wow_final.cpp	/^bool Warrior::fight_back(Warrior *e){$/;"	f	class:Warrior
+fight_back	wow_final.cpp	/^bool Wolf::fight_back(Warrior *e){$/;"	f	class:Wolf
 fight_force	test3-4.cpp	/^        uint32_t fight_force;$/;"	m	class:Warrior	file:
 fight_force	test5-2.cpp	/^        uint32_t fight_force;$/;"	m	class:Warrior	file:
+fight_force	test6-4.cpp	/^        uint32_t fight_force;$/;"	m	class:Warrior	file:
+fight_force	test6-4.cpp	/^        uint32_t fight_force;$/;"	m	class:Weapon	file:
 fight_force	wow_assemble.cpp	/^        uint32_t fight_force;$/;"	m	class:Warrior	file:
+fight_force	wow_final.cpp	/^        uint32_t fight_force;$/;"	m	class:Warrior	file:
+fight_force	wow_final.cpp	/^        uint32_t fight_force;$/;"	m	class:Weapon	file:
 fight_force	wow_preforwar.cpp	/^        uint32_t fight_force;$/;"	m	class:Warrior	file:
 flag	test4-4.cpp	/^        bool flag;$/;"	m	class:Bign	file:
+flee	test6-4.cpp	/^bool HeadQuarter::flee(City *ehqc, uint32_t min){$/;"	f	class:HeadQuarter
+flee	test6-4.cpp	/^bool Lion::flee(City *ehqc){$/;"	f	class:Lion
+flee	wow_final.cpp	/^bool HeadQuarter::flee(City *ehqc, uint32_t min){$/;"	f	class:HeadQuarter
+flee	wow_final.cpp	/^bool Lion::flee(City *ehqc){$/;"	f	class:Lion
 gen_lifesourcer	test6-4.cpp	/^        bool gen_lifesourcer(){$/;"	f	class:City
+gen_lifesourcer	wow_final.cpp	/^        bool gen_lifesourcer(){$/;"	f	class:City
+get_weaponforce	test6-4.cpp	/^uint32_t Warrior::get_weaponforce(){$/;"	f	class:Warrior
+get_weaponforce	wow_final.cpp	/^uint32_t Warrior::get_weaponforce(){$/;"	f	class:Warrior
+go	test6-4.cpp	/^void Iceman::go(HeadQuarter *ehq, City *c){$/;"	f	class:Iceman
+go	test6-4.cpp	/^void Warrior:: go(HeadQuarter *ehq, City *c){$/;"	f	class:Warrior
+go	wow_final.cpp	/^void Iceman::go(HeadQuarter *ehq, City *c){$/;"	f	class:Iceman
+go	wow_final.cpp	/^void Warrior:: go(HeadQuarter *ehq, City *c){$/;"	f	class:Warrior
+gostep	test6-4.cpp	/^bool HeadQuarter::gostep(HeadQuarter *ehq, uint32_t min){$/;"	f	class:HeadQuarter
+gostep	wow_final.cpp	/^bool HeadQuarter::gostep(HeadQuarter *ehq, uint32_t min){$/;"	f	class:HeadQuarter
 hq	test3-4.cpp	/^        HeadQuarter *hq;$/;"	m	class:Warrior	file:
 hq	test5-2.cpp	/^        HeadQuarter *hq;$/;"	m	class:Warrior	file:
+hq	test6-4.cpp	/^        HeadQuarter *hq;$/;"	m	class:Warrior	file:
 hq	wow_assemble.cpp	/^        HeadQuarter *hq;$/;"	m	class:Warrior	file:
+hq	wow_final.cpp	/^        HeadQuarter *hq;$/;"	m	class:Warrior	file:
 hq	wow_preforwar.cpp	/^        HeadQuarter *hq;$/;"	m	class:Warrior	file:
 hqnames	test6-4.cpp	/^        static string hqnames[HQ_NUM];$/;"	m	class:HeadQuarter	file:
 hqnames	test6-4.cpp	/^string HeadQuarter::hqnames[HQ_NUM] = {"red", "blue"};$/;"	m	class:HeadQuarter	file:
+hqnames	wow_final.cpp	/^        static string hqnames[HQ_NUM];$/;"	m	class:HeadQuarter	file:
+hqnames	wow_final.cpp	/^string HeadQuarter::hqnames[HQ_NUM] = {"red", "blue"};$/;"	m	class:HeadQuarter	file:
+hurt	test6-4.cpp	/^bool Lion::hurt(Warrior *e){$/;"	f	class:Lion
+hurt	test6-4.cpp	/^bool Ninja::hurt(Warrior *e){$/;"	f	class:Ninja
+hurt	test6-4.cpp	/^bool Warrior::hurt(Warrior *e){$/;"	f	class:Warrior
+hurt	wow_final.cpp	/^bool Lion::hurt(Warrior *e){$/;"	f	class:Lion
+hurt	wow_final.cpp	/^bool Ninja::hurt(Warrior *e){$/;"	f	class:Ninja
+hurt	wow_final.cpp	/^bool Warrior::hurt(Warrior *e){$/;"	f	class:Warrior
 i	test4-1.cpp	/^    double r,i;$/;"	m	class:Complex	file:
 i	test7-1-1.cpp	/^        int i,j;$/;"	m	class:CArray3D::CArray2D	file:
 i	test7-1.cpp	/^                 int i;$/;"	m	class:CArray3D::CArray2D	file:
@@ -246,21 +402,51 @@ id	test3-4.cpp	/^        uint32_t id;$/;"	m	class:Warrior	file:
 id	test5-2.cpp	/^        uint32_t id;$/;"	m	class:Warrior	file:
 id	test5-2.cpp	/^        uint32_t id;$/;"	m	class:Weapon	file:
 id	test6-4.cpp	/^        uint32_t id;$/;"	m	class:City	file:
+id	test6-4.cpp	/^        uint32_t id;$/;"	m	class:PriorityWarrior	file:
+id	test6-4.cpp	/^        uint32_t id;$/;"	m	class:PriorityWeapon	file:
+id	test6-4.cpp	/^        uint32_t id;$/;"	m	class:Warrior	file:
+id	test6-4.cpp	/^        uint32_t id;$/;"	m	class:Weapon	file:
 id	wow_assemble.cpp	/^        uint32_t id;$/;"	m	class:Warrior	file:
 id	wow_assemble.cpp	/^        uint32_t id;$/;"	m	class:Weapon	file:
+id	wow_final.cpp	/^        uint32_t id;$/;"	m	class:City	file:
+id	wow_final.cpp	/^        uint32_t id;$/;"	m	class:PriorityWarrior	file:
+id	wow_final.cpp	/^        uint32_t id;$/;"	m	class:PriorityWeapon	file:
+id	wow_final.cpp	/^        uint32_t id;$/;"	m	class:Warrior	file:
+id	wow_final.cpp	/^        uint32_t id;$/;"	m	class:Weapon	file:
 id	wow_preforwar.cpp	/^        uint32_t id;$/;"	m	class:Warrior	file:
 image	test2-1.cpp	/^        double image;$/;"	m	class:Complex	file:
-increase_warrior	test6-4.cpp	/^        void increase_warrior(){total_warrior++;}$/;"	f
+increase_warrior	test6-4.cpp	/^        void increase_warrior(){total_warrior++;}$/;"	f	class:City
+increase_warrior	wow_final.cpp	/^        void increase_warrior(){total_warrior++;}$/;"	f	class:City
+index	test6-4.cpp	/^        static uint32_t index;$/;"	m	class:PriorityWarrior	file:
+index	test6-4.cpp	/^        static uint32_t index;$/;"	m	class:PriorityWeapon	file:
+index	test6-4.cpp	/^uint32_t  PriorityWarrior::index = 0;$/;"	m	class:PriorityWarrior	file:
+index	test6-4.cpp	/^uint32_t PriorityWeapon::index =0;$/;"	m	class:PriorityWeapon	file:
+index	wow_final.cpp	/^        static uint32_t index;$/;"	m	class:PriorityWarrior	file:
+index	wow_final.cpp	/^        static uint32_t index;$/;"	m	class:PriorityWeapon	file:
+index	wow_final.cpp	/^uint32_t  PriorityWarrior::index = 0;$/;"	m	class:PriorityWarrior	file:
+index	wow_final.cpp	/^uint32_t PriorityWeapon::index =0;$/;"	m	class:PriorityWeapon	file:
+inital_fightvals	test6-4.cpp	/^        static uint32_t inital_fightvals[WARRIOR_NUM]; $/;"	m	class:Warrior	file:
+inital_fightvals	test6-4.cpp	/^uint32_t Warrior::inital_fightvals[WARRIOR_NUM] = {0, 0, 0, 0, 0}; $/;"	m	class:Warrior	file:
+inital_fightvals	wow_final.cpp	/^        static uint32_t inital_fightvals[WARRIOR_NUM]; $/;"	m	class:Warrior	file:
+inital_fightvals	wow_final.cpp	/^uint32_t Warrior::inital_fightvals[WARRIOR_NUM] = {0, 0, 0, 0, 0}; $/;"	m	class:Warrior	file:
 inital_lifevals	test3-4.cpp	/^        static uint8_t inital_lifevals[WARRIOR_NUM]; $/;"	m	class:Warrior	file:
 inital_lifevals	test3-4.cpp	/^uint8_t Warrior::inital_lifevals[WARRIOR_NUM] = {0, 0, 0, 0, 0};$/;"	m	class:Warrior	file:
 inital_lifevals	test5-2.cpp	/^        static uint8_t inital_lifevals[WARRIOR_NUM]; $/;"	m	class:Warrior	file:
 inital_lifevals	test5-2.cpp	/^uint8_t Warrior::inital_lifevals[WARRIOR_NUM] = {0, 0, 0, 0, 0};$/;"	m	class:Warrior	file:
+inital_lifevals	test6-4.cpp	/^        static uint32_t inital_lifevals[WARRIOR_NUM]; $/;"	m	class:Warrior	file:
+inital_lifevals	test6-4.cpp	/^uint32_t Warrior::inital_lifevals[WARRIOR_NUM] = {0, 0, 0, 0, 0}; $/;"	m	class:Warrior	file:
 inital_lifevals	wow_assemble.cpp	/^        static uint8_t inital_lifevals[WARRIOR_NUM]; $/;"	m	class:Warrior	file:
 inital_lifevals	wow_assemble.cpp	/^uint8_t Warrior::inital_lifevals[WARRIOR_NUM] = {0, 0, 0, 0, 0};$/;"	m	class:Warrior	file:
+inital_lifevals	wow_final.cpp	/^        static uint32_t inital_lifevals[WARRIOR_NUM]; $/;"	m	class:Warrior	file:
+inital_lifevals	wow_final.cpp	/^uint32_t Warrior::inital_lifevals[WARRIOR_NUM] = {0, 0, 0, 0, 0}; $/;"	m	class:Warrior	file:
 inital_lifevals	wow_preforwar.cpp	/^        static uint8_t inital_lifevals[WARRIOR_NUM]; $/;"	m	class:Warrior	file:
 inital_lifevals	wow_preforwar.cpp	/^uint8_t Warrior::inital_lifevals[WARRIOR_NUM] = {0, 0, 0, 0, 0};$/;"	m	class:Warrior	file:
-insert_banner	test6-4.cpp	/^        void insert_banner(HeadQuarter *hq){$/;"	f	class:City
-isalone	test6-4.cpp	/^        bool isalone(){$/;"	f
+insert_banner	test6-4.cpp	/^void City::insert_banner(HeadQuarter *hq){$/;"	f	class:City
+insert_banner	wow_final.cpp	/^void City::insert_banner(HeadQuarter *hq){$/;"	f	class:City
+isalone	test6-4.cpp	/^        bool isalone(){$/;"	f	class:City
+isalone	wow_final.cpp	/^        bool isalone(){$/;"	f	class:City
+isproactive	test6-4.cpp	/^bool Warrior::isproactive(){$/;"	f	class:Warrior
+isproactive	wow_final.cpp	/^bool Warrior::isproactive(){$/;"	f	class:Warrior
 j	test7-1-1.cpp	/^        int i,j;$/;"	m	class:CArray3D::CArray2D	file:
 j	test7-1.cpp	/^                 int j;$/;"	m	class:CArray3D::CArray2D	file:
 k	test3-3.cpp	/^    int k;$/;"	m	class:Base	file:
@@ -271,11 +457,16 @@ len	test4-4.cpp	/^        uint32_t len;$/;"	m	class:Bign	file:
 length	test4-4.cpp	/^        uint32_t length(){return len;}$/;"	f	class:Bign
 life_force	test3-4.cpp	/^        uint32_t life_force;$/;"	m	class:Warrior	file:
 life_force	test5-2.cpp	/^        uint32_t life_force;$/;"	m	class:Warrior	file:
+life_force	test6-4.cpp	/^        uint32_t life_force;$/;"	m	class:Warrior	file:
 life_force	wow_assemble.cpp	/^        uint32_t life_force;$/;"	m	class:Warrior	file:
+life_force	wow_final.cpp	/^        uint32_t life_force;$/;"	m	class:Warrior	file:
 life_force	wow_preforwar.cpp	/^        uint32_t life_force;$/;"	m	class:Warrior	file:
 lifesourcer	test6-4.cpp	/^        uint32_t lifesourcer;$/;"	m	class:City	file:
+lifesourcer	wow_final.cpp	/^        uint32_t lifesourcer;$/;"	m	class:City	file:
 loyalty	test5-2.cpp	/^        uint32_t loyalty;$/;"	m	class:Lion	file:
+loyalty	test6-4.cpp	/^        int32_t loyalty;$/;"	m	class:Lion	file:
 loyalty	wow_assemble.cpp	/^        uint32_t loyalty;$/;"	m	class:Lion	file:
+loyalty	wow_final.cpp	/^        int32_t loyalty;$/;"	m	class:Lion	file:
 main	big_int.cpp	/^    int main(int argc, char* argv[]) {$/;"	f
 main	big_int2.cpp	/^int main()$/;"	f
 main	long_int.cpp	/^int main(){$/;"	f
@@ -297,6 +488,7 @@ main	test5-2.cpp	/^int main(){$/;"	f
 main	test6-1.cpp	/^int main() {$/;"	f
 main	test6-2.cpp	/^int main() {$/;"	f
 main	test6-3.cpp	/^int main() {$/;"	f
+main	test6-4.cpp	/^int main(){$/;"	f
 main	test7-1-1.cpp	/^int main()$/;"	f
 main	test7-1.cpp	/^int main()$/;"	f
 main	test7-2-1.cpp	/^int main()$/;"	f
@@ -305,23 +497,32 @@ main	test7-3.cpp	/^int main()$/;"	f
 main	test7-4-1.cpp	/^int main()$/;"	f
 main	test7-4.cpp	/^int main(){$/;"	f
 main	wow_assemble.cpp	/^int main(){$/;"	f
+main	wow_final.cpp	/^int main(){$/;"	f
 main	wow_preforwar.cpp	/^int main(){$/;"	f
 max	big_int2.cpp	58;"	d	file:
 max	test4-4-2.cpp	58;"	d	file:
 min	big_int2.cpp	59;"	d	file:
 min	test4-4-2.cpp	59;"	d	file:
 morale	test5-2.cpp	/^       double morale;$/;"	m	class:Dragon	file:
+morale	test6-4.cpp	/^        double morale;$/;"	m	class:Dragon	file:
 morale	wow_assemble.cpp	/^       double morale;$/;"	m	class:Dragon	file:
+morale	wow_final.cpp	/^        double morale;$/;"	m	class:Dragon	file:
 n	test4-4.cpp	/^        char *n;$/;"	m	class:Bign	file:
 nVal	test4-2.cpp	/^    int nVal;$/;"	m	class:MyInt	file:
 nVal	test6-1.cpp	/^        int nVal;$/;"	m	class:A	file:
 nVal	test6-3.cpp	/^        int nVal;$/;"	m	class:A	file:
 name	test1-1.cpp	/^    char *name;$/;"	m	class:Student	file:
 name	test5-2.cpp	/^        char *name;$/;"	m	class:Weapon	file:
+name	test6-4.cpp	/^        char *name;$/;"	m	class:Weapon	file:
 name	wow_assemble.cpp	/^        char *name;$/;"	m	class:Weapon	file:
+name	wow_final.cpp	/^        char *name;$/;"	m	class:Weapon	file:
 next	test3-4.cpp	/^        Warrior *next;$/;"	m	class:Warrior	file:
 next	test5-2.cpp	/^        Warrior *next;$/;"	m	class:Warrior	file:
+next	test6-4.cpp	/^        Warrior *next;$/;"	m	class:Warrior	file:
+next	test6-4.cpp	/^        Weapon *next;$/;"	m	class:Weapon	file:
 next	wow_assemble.cpp	/^        Warrior *next;$/;"	m	class:Warrior	file:
+next	wow_final.cpp	/^        Warrior *next;$/;"	m	class:Warrior	file:
+next	wow_final.cpp	/^        Weapon *next;$/;"	m	class:Weapon	file:
 next	wow_preforwar.cpp	/^        Warrior *next;$/;"	m	class:Warrior	file:
 num	big_int.cpp	/^        char num[MAX_NUM_LEN];$/;"	m	class:BigInt	file:
 nyAdd	test7-4-1.cpp	/^string nyAdd(string s1, string s2)$/;"	f
@@ -375,6 +576,10 @@ operator <	big_int.cpp	/^    bool operator <(const BigInt & n1, const BigInt & n
 operator <	big_int2.cpp	/^bool bign::operator<(const bign &num) const$/;"	f	class:bign
 operator <	test4-4-2.cpp	/^bool bign::operator<(const bign &num) const$/;"	f	class:bign
 operator <	test4-4.cpp	/^bool Bign::operator<(const Bign &b){$/;"	f	class:Bign
+operator <	test6-4.cpp	/^        bool operator <(const PriorityWarrior &pw) const{$/;"	f	class:PriorityWarrior
+operator <	test6-4.cpp	/^        bool operator <(const PriorityWeapon & pwe) const{$/;"	f	class:PriorityWeapon
+operator <	wow_final.cpp	/^        bool operator <(const PriorityWarrior &pw) const{$/;"	f	class:PriorityWarrior
+operator <	wow_final.cpp	/^        bool operator <(const PriorityWeapon & pwe) const{$/;"	f	class:PriorityWeapon
 operator <<	big_int.cpp	/^    ostream & operator << (ostream & os, const BigInt & bigInt) {$/;"	f
 operator <<	big_int2.cpp	/^ostream &operator<<(ostream &out, bign &num)$/;"	f
 operator <<	long_int.cpp	/^ostream & operator<<(ostream & o, const LongInt &li){$/;"	f
@@ -395,6 +600,8 @@ operator =	test4-4-2.cpp	/^bign bign::operator=(int num)$/;"	f	class:bign
 operator =	test4-4.cpp	/^Bign& Bign::operator=(const Bign& b){$/;"	f	class:Bign
 operator =	test4-4.cpp	/^Bign& Bign::operator=(const char *str){$/;"	f	class:Bign
 operator =	test4-4.cpp	/^Bign& Bign::operator=(const int32_t i){$/;"	f	class:Bign
+operator =	test6-4.cpp	/^        PriorityWarrior & operator=(const PriorityWarrior *pw){$/;"	f	class:PriorityWarrior
+operator =	wow_final.cpp	/^        PriorityWarrior & operator=(const PriorityWarrior *pw){$/;"	f	class:PriorityWarrior
 operator ==	big_int.cpp	/^    bool operator == (const BigInt & n1, const BigInt & n2) {$/;"	f
 operator ==	big_int2.cpp	/^bool bign::operator==(const bign&num)const$/;"	f	class:bign
 operator ==	test4-4-2.cpp	/^bool bign::operator==(const bign&num)const$/;"	f	class:bign
@@ -402,6 +609,10 @@ operator ==	test4-4.cpp	/^bool Bign::operator==(const Bign &b){$/;"	f	class:Bign
 operator >	big_int2.cpp	/^bool bign::operator>(const bign&num)const$/;"	f	class:bign
 operator >	test4-4-2.cpp	/^bool bign::operator>(const bign&num)const$/;"	f	class:bign
 operator >	test4-4.cpp	/^bool Bign::operator>(const Bign &b){$/;"	f	class:Bign
+operator >	test6-4.cpp	/^        bool operator >(const PriorityWarrior &pw) const{$/;"	f	class:PriorityWarrior
+operator >	test6-4.cpp	/^        bool operator >(const PriorityWeapon & pwe) const{$/;"	f	class:PriorityWeapon
+operator >	wow_final.cpp	/^        bool operator >(const PriorityWarrior &pw) const{$/;"	f	class:PriorityWarrior
+operator >	wow_final.cpp	/^        bool operator >(const PriorityWeapon & pwe) const{$/;"	f	class:PriorityWeapon
 operator >=	big_int2.cpp	/^bool bign::operator>=(const bign&num)const$/;"	f	class:bign
 operator >=	test4-4-2.cpp	/^bool bign::operator>=(const bign&num)const$/;"	f	class:bign
 operator >>	big_int.cpp	/^    istream & operator >> (istream & is, BigInt & bigInt) {$/;"	f
@@ -409,6 +620,7 @@ operator >>	big_int2.cpp	/^istream &operator>>(istream &in, bign &num)$/;"	f
 operator >>	long_int.cpp	/^istream &  operator>>(istream & i, LongInt & li){$/;"	f
 operator >>	test4-4-2.cpp	/^istream &operator>>(istream &in, bign &num)$/;"	f
 operator >>	test4-4.cpp	/^istream &operator>>(istream &i, Bign &b){$/;"	f
+operator >>	test7-4.cpp	/^istream & operator>>(istream &in, StringCmd & sc){$/;"	f
 operator []	test4-3.cpp	/^        int * operator[](int index){$/;"	f	class:Array2
 operator []	test7-1-1.cpp	/^        T1 *operator[](int a1) {$/;"	f	class:CArray3D::CArray2D
 operator []	test7-1-1.cpp	/^    CArray2D<T> &operator[](int i) {$/;"	f	class:CArray3D
@@ -418,15 +630,20 @@ p	long_int.cpp	/^        int *p;$/;"	m	class:LongInt	file:
 p	test4-3.cpp	/^        int *p = NULL;$/;"	m	class:Array2	file:
 p	test7-1.cpp	/^        CArray2D <T> **p;$/;"	m	class:CArray3D	file:
 p2d	test7-1.cpp	/^                 T1 *p2d;$/;"	m	class:CArray3D::CArray2D	file:
+perish_together	test6-4.cpp	/^bool Bomb::perish_together(Warrior *enemy,  bool isproactive){$/;"	f	class:Bomb
+perish_together	test6-4.cpp	/^void HeadQuarter::perish_together(HeadQuarter *ehq, uint32_t min){$/;"	f	class:HeadQuarter
+perish_together	wow_final.cpp	/^bool Bomb::perish_together(Warrior *enemy,  bool isproactive){$/;"	f	class:Bomb
+perish_together	wow_final.cpp	/^void HeadQuarter::perish_together(HeadQuarter *ehq, uint32_t min){$/;"	f	class:HeadQuarter
 pow	big_int2.cpp	/^bign bign::pow(const bign& num)const$/;"	f	class:bign
 pow	test4-4-2.cpp	/^bign bign::pow(const bign& num)const$/;"	f	class:bign
+print	test.cpp	/^void print(priority_queue< int, vector<int>, greater<int> > pq){$/;"	f
 print	test.cpp	/^void print(priority_queue<int> pq){$/;"	f
 print_info	test1-1.cpp	/^   void print_info(){$/;"	f	class:Student
 print_info	test3-4.cpp	/^void HeadQuarter::print_info(uint32_t time, WType wtype){$/;"	f	class:HeadQuarter
 print_info	test5-2.cpp	/^void HeadQuarter::print_info(uint32_t time, WType wtype, Warrior *w=NULL){$/;"	f	class:HeadQuarter
 print_info	wow_assemble.cpp	/^void HeadQuarter::print_info(uint32_t time, WType wtype, Warrior *w=NULL){$/;"	f	class:HeadQuarter
 print_info	wow_preforwar.cpp	/^void HeadQuarter::print_info(uint32_t time, WType wtype){$/;"	f	class:HeadQuarter
-process	test7-4.cpp	/^void process(string *p, int n, string cmd){$/;"	f
+process_data	test7-4.cpp	/^string StringCmd::process_data(string cmd){$/;"	f	class:StringCmd
 producing_order	test3-4.cpp	/^        static WType producing_order[2][WARRIOR_NUM];$/;"	m	class:HeadQuarter	file:
 producing_order	test3-4.cpp	/^WType HeadQuarter::producing_order[HQ_NUM][WARRIOR_NUM] = {{ICEMAN, LION, WOLF, NINJA, DRAGON},$/;"	m	class:HeadQuarter	file:
 producing_order	test5-2.cpp	/^        static WType producing_order[2][WARRIOR_NUM];$/;"	m	class:HeadQuarter	file:
@@ -435,12 +652,30 @@ producing_order	test6-4.cpp	/^        static WType producing_order[2][WARRIOR_NU
 producing_order	test6-4.cpp	/^WType HeadQuarter::producing_order[HQ_NUM][WARRIOR_NUM] = {{ICEMAN, LION, WOLF, NINJA, DRAGON},$/;"	m	class:HeadQuarter	file:
 producing_order	wow_assemble.cpp	/^        static WType producing_order[2][WARRIOR_NUM];$/;"	m	class:HeadQuarter	file:
 producing_order	wow_assemble.cpp	/^WType HeadQuarter::producing_order[HQ_NUM][WARRIOR_NUM] = {{ICEMAN, LION, WOLF, NINJA, DRAGON},$/;"	m	class:HeadQuarter	file:
+producing_order	wow_final.cpp	/^        static WType producing_order[2][WARRIOR_NUM];$/;"	m	class:HeadQuarter	file:
+producing_order	wow_final.cpp	/^WType HeadQuarter::producing_order[HQ_NUM][WARRIOR_NUM] = {{ICEMAN, LION, WOLF, NINJA, DRAGON},$/;"	m	class:HeadQuarter	file:
 producing_order	wow_preforwar.cpp	/^        static WType producing_order[2][WARRIOR_NUM];$/;"	m	class:HeadQuarter	file:
 producing_order	wow_preforwar.cpp	/^WType HeadQuarter::producing_order[HQ_NUM][WARRIOR_NUM] = {{ICEMAN, LION, WOLF, NINJA, DRAGON},$/;"	m	class:HeadQuarter	file:
 r	test4-1.cpp	/^    double r,i;$/;"	m	class:Complex	file:
+reached	test6-4.cpp	/^        bool reached;$/;"	m	class:Warrior	file:
 reached	test6-4.cpp	/^        uint32_t reached;$/;"	m	class:HeadQuarter	file:
+reached	wow_final.cpp	/^        bool reached;$/;"	m	class:Warrior	file:
+reached	wow_final.cpp	/^        uint32_t reached;$/;"	m	class:HeadQuarter	file:
 real	test2-1.cpp	/^        double real;$/;"	m	class:Complex	file:
 red_cnt	test6-4.cpp	/^        int8_t red_cnt;$/;"	m	class:City	file:
+red_cnt	wow_final.cpp	/^        int8_t red_cnt;$/;"	m	class:City	file:
+release_arrows	test6-4.cpp	/^void HeadQuarter::release_arrows(HeadQuarter *ehq, uint32_t min){$/;"	f	class:HeadQuarter
+release_arrows	wow_final.cpp	/^void HeadQuarter::release_arrows(HeadQuarter *ehq, uint32_t min){$/;"	f	class:HeadQuarter
+report_life_force	test6-4.cpp	/^void HeadQuarter::report_life_force(uint32_t min){$/;"	f	class:HeadQuarter
+report_life_force	wow_final.cpp	/^void HeadQuarter::report_life_force(uint32_t min){$/;"	f	class:HeadQuarter
+report_weapons	test6-4.cpp	/^void HeadQuarter::report_weapons(uint32_t min){$/;"	f	class:HeadQuarter
+report_weapons	wow_final.cpp	/^void HeadQuarter::report_weapons(uint32_t min){$/;"	f	class:HeadQuarter
+rob_lifesourcer	test6-4.cpp	/^void HeadQuarter::rob_lifesourcer(priority_queue <$/;"	f	class:HeadQuarter
+rob_lifesourcer	test6-4.cpp	/^void HeadQuarter::rob_lifesourcer(priority_queue <PriorityWarrior> pq){$/;"	f	class:HeadQuarter
+rob_lifesourcer	wow_final.cpp	/^void HeadQuarter::rob_lifesourcer(priority_queue <$/;"	f	class:HeadQuarter
+rob_lifesourcer	wow_final.cpp	/^void HeadQuarter::rob_lifesourcer(priority_queue <PriorityWarrior> pq){$/;"	f	class:HeadQuarter
+rob_weapon	test6-4.cpp	/^void Wolf::rob_weapon(Warrior *e){$/;"	f	class:Wolf
+rob_weapon	wow_final.cpp	/^void Wolf::rob_weapon(Warrior *e){$/;"	f	class:Wolf
 row	test4-3.cpp	/^        int row;$/;"	m	class:Array2	file:
 s	big_int2.cpp	/^    int len, s[MAX_L];\/\/数的长度，记录数组$/;"	m	class:bign	file:
 s	test4-4-2.cpp	/^    int len, s[MAX_L];\/\/数的长度，记录数组$/;"	m	class:bign	file:
@@ -449,44 +684,65 @@ set_lifeval	test3-4.cpp	/^        void set_lifeval(uint32_t lv){total_lf=lv;stop
 set_lifeval	test5-2.cpp	/^        void set_lifeval(uint32_t lv){total_lf=lv;stopped=false;}$/;"	f	class:HeadQuarter
 set_lifeval	test6-4.cpp	/^        void set_lifeval(uint32_t lv){total_lf=lv;stopped=false;}$/;"	f	class:HeadQuarter
 set_lifeval	wow_assemble.cpp	/^        void set_lifeval(uint32_t lv){total_lf=lv;stopped=false;}$/;"	f	class:HeadQuarter
+set_lifeval	wow_final.cpp	/^        void set_lifeval(uint32_t lv){total_lf=lv;stopped=false;}$/;"	f	class:HeadQuarter
 set_lifeval	wow_preforwar.cpp	/^        void set_lifeval(uint32_t lv){total_lf=lv;stopped=false;}$/;"	f	class:HeadQuarter
 set_scores	test1-1.cpp	/^   void set_scores(uint32_t *_scores, uint32_t len){$/;"	f	class:Student
+shoot	test6-4.cpp	/^        bool shoot(Warrior *e){$/;"	f	class:Arrow
+shoot	wow_final.cpp	/^        bool shoot(Warrior *e){$/;"	f	class:Arrow
 sign	big_int2.cpp	/^    bool sign;\/\/符号 1正数 0负数$/;"	m	class:bign	file:
 sign	test4-4-2.cpp	/^    bool sign;\/\/符号 1正数 0负数$/;"	m	class:bign	file:
 size	long_int.cpp	/^        int size;$/;"	m	class:LongInt	file:
+split	test7-4.cpp	/^void StringCmd::split(const string cmd, queue<string> & q){$/;"	f	class:StringCmd
+step	test6-4.cpp	/^        uint32_t step;$/;"	m	class:Warrior	file:
+step	wow_final.cpp	/^        uint32_t step;$/;"	m	class:Warrior	file:
 stopped	test3-4.cpp	/^        bool stopped;$/;"	m	class:HeadQuarter	file:
 stopped	test5-2.cpp	/^        bool stopped;$/;"	m	class:HeadQuarter	file:
 stopped	test6-4.cpp	/^        bool stopped;$/;"	m	class:HeadQuarter	file:
 stopped	wow_assemble.cpp	/^        bool stopped;$/;"	m	class:HeadQuarter	file:
+stopped	wow_final.cpp	/^        bool stopped;$/;"	m	class:HeadQuarter	file:
 stopped	wow_preforwar.cpp	/^        bool stopped;$/;"	m	class:HeadQuarter	file:
 strCommand	test7-4-1.cpp	/^queue<string> strCommand;\/\/存储命令字符串$/;"	v
 strItoa	test7-4-1.cpp	/^char* strItoa = new char[101];\/\/存储将整数转换的字符串，并作返回值使用$/;"	v
 strProcess	test7-4-1.cpp	/^bool strProcess()$/;"	f
 strStorage	test7-4-1.cpp	/^void strStorage(const char* ch)$/;"	f
+take_lifesourcer	test6-4.cpp	/^void HeadQuarter::take_lifesourcer(uint32_t min){$/;"	f	class:HeadQuarter
+take_lifesourcer	wow_final.cpp	/^void HeadQuarter::take_lifesourcer(uint32_t min){$/;"	f	class:HeadQuarter
 takeaway_lifesourcer	test6-4.cpp	/^        uint32_t takeaway_lifesourcer(){$/;"	f	class:City
+takeaway_lifesourcer	wow_final.cpp	/^        uint32_t takeaway_lifesourcer(){$/;"	f	class:City
 toStr	big_int2.cpp	/^string bign::toStr() const$/;"	f	class:bign
 toStr	test4-4-2.cpp	/^string bign::toStr() const$/;"	f	class:bign
 total	test6-4.cpp	/^        static uint32_t total;$/;"	m	class:City	file:
+total	test6-4.cpp	/^uint32_t City::total = 0;$/;"	m	class:City	file:
+total	wow_final.cpp	/^        static uint32_t total;$/;"	m	class:City	file:
+total	wow_final.cpp	/^uint32_t City::total = 0;$/;"	m	class:City	file:
 total_lf	test3-4.cpp	/^        uint32_t total_lf;$/;"	m	class:HeadQuarter	file:
 total_lf	test5-2.cpp	/^        uint32_t total_lf;$/;"	m	class:HeadQuarter	file:
 total_lf	test6-4.cpp	/^        uint32_t total_lf;$/;"	m	class:HeadQuarter	file:
 total_lf	wow_assemble.cpp	/^        uint32_t total_lf;$/;"	m	class:HeadQuarter	file:
+total_lf	wow_final.cpp	/^        uint32_t total_lf;$/;"	m	class:HeadQuarter	file:
 total_lf	wow_preforwar.cpp	/^        uint32_t total_lf;$/;"	m	class:HeadQuarter	file:
 total_war	test3-4.cpp	/^        uint32_t total_war;$/;"	m	class:HeadQuarter	file:
 total_war	test5-2.cpp	/^        uint32_t total_war;$/;"	m	class:HeadQuarter	file:
 total_war	test6-4.cpp	/^        uint32_t total_war;$/;"	m	class:HeadQuarter	file:
 total_war	wow_assemble.cpp	/^        uint32_t total_war;$/;"	m	class:HeadQuarter	file:
+total_war	wow_final.cpp	/^        uint32_t total_war;$/;"	m	class:HeadQuarter	file:
 total_war	wow_preforwar.cpp	/^        uint32_t total_war;$/;"	m	class:HeadQuarter	file:
 total_warrior	test6-4.cpp	/^        uint32_t total_warrior;$/;"	m	class:City	file:
+total_warrior	wow_final.cpp	/^        uint32_t total_warrior;$/;"	m	class:City	file:
 type	test3-4.cpp	/^        HType type;    $/;"	m	class:HeadQuarter	file:
 type	test3-4.cpp	/^        WType type;$/;"	m	class:Warrior	file:
 type	test5-2.cpp	/^        HType type;    $/;"	m	class:HeadQuarter	file:
 type	test5-2.cpp	/^        WType type;$/;"	m	class:Warrior	file:
 type	test6-4.cpp	/^        HType type;    $/;"	m	class:HeadQuarter	file:
+type	test6-4.cpp	/^        WType type;$/;"	m	class:Warrior	file:
 type	wow_assemble.cpp	/^        HType type;    $/;"	m	class:HeadQuarter	file:
 type	wow_assemble.cpp	/^        WType type;$/;"	m	class:Warrior	file:
+type	wow_final.cpp	/^        HType type;    $/;"	m	class:HeadQuarter	file:
+type	wow_final.cpp	/^        WType type;$/;"	m	class:Warrior	file:
 type	wow_preforwar.cpp	/^        HType type;    $/;"	m	class:HeadQuarter	file:
 type	wow_preforwar.cpp	/^        WType type;$/;"	m	class:Warrior	file:
+used	test6-4.cpp	/^        int8_t used;$/;"	m	class:Arrow	file:
+used	wow_final.cpp	/^        int8_t used;$/;"	m	class:Arrow	file:
 v	test3-2.cpp	/^    int v;$/;"	m	class:Sample	file:
 v	test3-3.cpp	/^    int v; Base b;$/;"	m	class:Big	file:
 val	test3-1.cpp	/^    int val;$/;"	m	class:A	file:
@@ -494,24 +750,46 @@ war_cnt	test3-4.cpp	/^        uint32_t war_cnt[WARRIOR_NUM];$/;"	m	class:HeadQua
 war_cnt	test5-2.cpp	/^        uint32_t war_cnt[WARRIOR_NUM];$/;"	m	class:HeadQuarter	file:
 war_cnt	test6-4.cpp	/^        uint32_t war_cnt[WARRIOR_NUM];$/;"	m	class:HeadQuarter	file:
 war_cnt	wow_assemble.cpp	/^        uint32_t war_cnt[WARRIOR_NUM];$/;"	m	class:HeadQuarter	file:
+war_cnt	wow_final.cpp	/^        uint32_t war_cnt[WARRIOR_NUM];$/;"	m	class:HeadQuarter	file:
 war_cnt	wow_preforwar.cpp	/^        uint32_t war_cnt[WARRIOR_NUM];$/;"	m	class:HeadQuarter	file:
+warnames	test6-4.cpp	/^        static string warnames[WARRIOR_NUM];$/;"	m	class:Warrior	file:
+warnames	test6-4.cpp	/^string Warrior::warnames[WARRIOR_NUM] = {"dragon", "ninja", "iceman", "lion", "wolf"};$/;"	m	class:Warrior	file:
+warnames	wow_final.cpp	/^        static string warnames[WARRIOR_NUM];$/;"	m	class:Warrior	file:
+warnames	wow_final.cpp	/^string Warrior::warnames[WARRIOR_NUM] = {"dragon", "ninja", "iceman", "lion", "wolf"};$/;"	m	class:Warrior	file:
+warrior	test6-4.cpp	/^        Warrior *warrior;$/;"	m	class:PriorityWarrior	file:
+warrior	test6-4.cpp	/^        Warrior *warrior;$/;"	m	class:Weapon	file:
+warrior	wow_final.cpp	/^        Warrior *warrior;$/;"	m	class:PriorityWarrior	file:
+warrior	wow_final.cpp	/^        Warrior *warrior;$/;"	m	class:Weapon	file:
 warrior_lib	test3-4.cpp	/^        Warrior *warrior_lib;$/;"	m	class:HeadQuarter	file:
 warrior_lib	test5-2.cpp	/^        Warrior *warrior_lib;$/;"	m	class:HeadQuarter	file:
 warrior_lib	test6-4.cpp	/^        Warrior *warrior_lib;$/;"	m	class:HeadQuarter	file:
 warrior_lib	wow_assemble.cpp	/^        Warrior *warrior_lib;$/;"	m	class:HeadQuarter	file:
+warrior_lib	wow_final.cpp	/^        Warrior *warrior_lib;$/;"	m	class:HeadQuarter	file:
 warrior_lib	wow_preforwar.cpp	/^        Warrior *warrior_lib;$/;"	m	class:HeadQuarter	file:
 weapon	test5-2.cpp	/^        Weapon *weapon;$/;"	m	class:Iceman	file:
 weapon	test5-2.cpp	/^        Weapon *weapon[2];$/;"	m	class:Ninja	file:
 weapon	test5-2.cpp	/^       Weapon *weapon;$/;"	m	class:Dragon	file:
+weapon	test6-4.cpp	/^        Weapon *weapon;$/;"	m	class:Iceman	file:
+weapon	test6-4.cpp	/^        Weapon *weapon;$/;"	m	class:PriorityWeapon	file:
+weapon	test6-4.cpp	/^        Weapon *weapon;$/;"	m	class:Warrior	file:
 weapon	wow_assemble.cpp	/^        Weapon *weapon;$/;"	m	class:Iceman	file:
 weapon	wow_assemble.cpp	/^        Weapon *weapon[2];$/;"	m	class:Ninja	file:
 weapon	wow_assemble.cpp	/^       Weapon *weapon;$/;"	m	class:Dragon	file:
+weapon	wow_final.cpp	/^        Weapon *weapon;$/;"	m	class:Iceman	file:
+weapon	wow_final.cpp	/^        Weapon *weapon;$/;"	m	class:PriorityWeapon	file:
+weapon	wow_final.cpp	/^        Weapon *weapon;$/;"	m	class:Warrior	file:
 weapon_types	test5-2.cpp	/^        static  string weapon_types[3];$/;"	m	class:Weapon	file:
 weapon_types	test5-2.cpp	/^string  Weapon::weapon_types[3] = {"sword", "bomb", "arrow"}; $/;"	m	class:Weapon	file:
+weapon_types	test6-4.cpp	/^        static  string weapon_types[3];$/;"	m	class:Weapon	file:
+weapon_types	test6-4.cpp	/^string  Weapon::weapon_types[3] = {"sword", "bomb", "arrow"}; $/;"	m	class:Weapon	file:
 weapon_types	wow_assemble.cpp	/^        static  string weapon_types[3];$/;"	m	class:Weapon	file:
 weapon_types	wow_assemble.cpp	/^string  Weapon::weapon_types[3] = {"sword", "bomb", "arrow"}; $/;"	m	class:Weapon	file:
+weapon_types	wow_final.cpp	/^        static  string weapon_types[3];$/;"	m	class:Weapon	file:
+weapon_types	wow_final.cpp	/^string  Weapon::weapon_types[3] = {"sword", "bomb", "arrow"}; $/;"	m	class:Weapon	file:
 x	test7-1.cpp	/^        int x;$/;"	m	class:CArray3D	file:
 y	test7-1.cpp	/^        int y;$/;"	m	class:CArray3D	file:
+yell	test6-4.cpp	/^        void yell(City *c){$/;"	f	class:Dragon
+yell	wow_final.cpp	/^        void yell(City *c){$/;"	f	class:Dragon
 z	test7-1.cpp	/^        int z;$/;"	m	class:CArray3D	file:
 ~A	test3-1.cpp	/^    ~A(){$/;"	f	class:A
 ~A	test6-2.cpp	/^        virtual ~A(){ cout << "destructor A" << endl;}$/;"	f	class:A
@@ -524,6 +802,7 @@ z	test7-1.cpp	/^        int z;$/;"	m	class:CArray3D	file:
 ~CArray3D	test7-1-1.cpp	/^    ~CArray3D() {$/;"	f	class:CArray3D
 ~CArray3D	test7-1.cpp	/^        ~CArray3D(){$/;"	f	class:CArray3D
 ~City	test6-4.cpp	/^        ~City(){total--;}$/;"	f	class:City
+~City	wow_final.cpp	/^        ~City(){total--;}$/;"	f	class:City
 ~Dragon	test5-2.cpp	/^       ~Dragon(){if(weapon) delete weapon;}$/;"	f	class:Dragon
 ~Dragon	wow_assemble.cpp	/^       ~Dragon(){if(weapon) delete weapon;}$/;"	f	class:Dragon
 ~Iceman	test5-2.cpp	/^       ~Iceman(){if(weapon) delete weapon;}$/;"	f	class:Iceman
@@ -531,7 +810,11 @@ z	test7-1.cpp	/^        int z;$/;"	m	class:CArray3D	file:
 ~Ninja	test5-2.cpp	/^       ~Ninja(){$/;"	f	class:Ninja
 ~Ninja	wow_assemble.cpp	/^       ~Ninja(){$/;"	f	class:Ninja
 ~Student	test1-1.cpp	/^    ~Student(){$/;"	f	class:Student
+~Warrior	test6-4.cpp	/^        ~Warrior(){$/;"	f	class:Warrior
+~Warrior	wow_final.cpp	/^        ~Warrior(){$/;"	f	class:Warrior
 ~Weapon	test5-2.cpp	/^        ~Weapon(){if(name) delete []name;}$/;"	f	class:Weapon
+~Weapon	test6-4.cpp	/^        ~Weapon(){if(name) delete []name;}$/;"	f	class:Weapon
 ~Weapon	wow_assemble.cpp	/^        ~Weapon(){if(name) delete []name;}$/;"	f	class:Weapon
+~Weapon	wow_final.cpp	/^        ~Weapon(){if(name) delete []name;}$/;"	f	class:Weapon
 ~bign	big_int2.cpp	/^bign::~bign()$/;"	f	class:bign
 ~bign	test4-4-2.cpp	/^bign::~bign()$/;"	f	class:bign

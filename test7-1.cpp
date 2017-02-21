@@ -1,6 +1,5 @@
 #include <iostream>
 using namespace std;
-// 在此处补充你的代码
 template <class T>
 class CArray3D{
     private:
@@ -37,7 +36,7 @@ class CArray3D{
             x = x_;
             y = y_;
             z = z_;
-            p = new CArray2D <T> *[x];
+            p = new CArray2D<T>*[x];
             for(int i=0; i<x; i++){
                 p[i] = new CArray2D<T>(y, z);
             }
@@ -58,14 +57,13 @@ int main()
 {
     CArray3D<int> a(3,4,5);
     int No = 0;
-    for( int i = 0; i < 3; ++ i )
+    for( int i = 0; i < 3; ++i )
         for( int j = 0; j < 4; ++j )
             for( int k = 0; k < 5; ++k )
-                a[i][j][k] = No ++;
-    for( int i = 0; i < 3; ++ i )
+                a[i][j][k] = No++;
+    for( int i = 0; i < 3; ++i )
         for( int j = 0; j < 4; ++j )
             for( int k = 0; k < 5; ++k )
-                //cout << a[i][j][k] << ",";
                 cout << a(i, j, k) << ",";
     return 0;
 }
